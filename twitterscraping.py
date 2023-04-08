@@ -10,14 +10,14 @@ st.title("Twitter scraping utility")
 def TwitterScrapingUtility():
     df = pd.DataFrame()
     #Streamlit input 
-    # text_query = st.text_input("Enter Keyword to search:")
-    # since_date = st.date_input("Enter start date:")
-    # until_date = st.date_input("Enter end date:")
-    # max_tweets = st.number_input("Enter number of tweets you want : ",step=1)
-    text_query = "DasaraMovie"
-    since_date = "2023-04-01"
-    until_date = "2023-04-05"
-    max_tweets = 5
+    text_query = st.text_input("Enter Keyword to search:")
+    since_date = st.date_input("Enter start date:")
+    until_date = st.date_input("Enter end date:")
+    max_tweets = st.number_input("Enter number of tweets you want : ",step=1)
+    #text_query = "DasaraMovie"
+    #since_date = "2023-04-01"
+    #until_date = "2023-04-05"
+    #max_tweets = 5
     #Creating unique name based on query 
     databasename=str(text_query)+str(since_date)+ \
                   str(until_date)+str(max_tweets)
